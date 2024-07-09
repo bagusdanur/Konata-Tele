@@ -1,16 +1,7 @@
 const TelegramBot = require("node-telegram-bot-api")
 const axios = require("axios");
-const { google } = require('googleapis');
-const fs = require('fs');
-const { Configuration, OpenAI } = require('openai');
 
-const settings = JSON.parse(fs.readFileSync('key.json'));
-const openaiApiKey = settings.keyopenai;
-const token= settings.token;
-const googleApiKey = settings.googleApiKey;
-const searchEngineId = settings.searchEngineId;
-const daniApi = settings.daniApi;
-const customSearch = google.customsearch('v1');
+const token= "7328578434:AAFwpqqgqqPNAssi7Z_p0TZss-IiUF9ppUo"
 const options = {
     polling: true
 }
